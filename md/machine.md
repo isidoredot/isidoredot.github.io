@@ -1,5 +1,7 @@
 # MACHINE
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9NJ-IPyb-TI?si=WpvwFKhcV7lc0poV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 project name: 354vcv
 
 it started as a VCV rack patch for my electronic composition class (MUSI354). we

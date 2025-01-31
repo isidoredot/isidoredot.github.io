@@ -1,5 +1,7 @@
 # Simple Paradise
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PRelPmY9szY?si=iZaN1Wv4rDcZgtfG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 project name: evil_yorushika
 
 it's inspired by yorushika's thoughtcrime, and my brain went to those evil ____
