@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- website for isidore. -->
+<!-- LAST UPDATED: 2025-01-30 -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, shrink-to-fit=no, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="description" content="vocalsynth music producer, isidore. ✝">
+    <meta name="author" content="isidore.">
+    <meta name="keywords" content="isidore, musician, vocaloid, art pop, catholic, grunge, rock, pop punk, j-pop, j-rock, vocaloid, hatsune miku, voca-p, vocalsynth">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>isidore.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "Manrope", serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+
+            color: white;
+            text-align: center;
+        }
+
+        /* === main sections === */
+        .splash {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .parallax-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('assets/roadbg.jpg') center/cover;
+            z-index: -1;
+        }
+        .foreground {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .foreground img {
+            max-width: 80%;
+            height: auto;
+        }
+        .post-splash {
+            height: 100vh; /* full viewport height */
+            display: flex;
+            flex-direction: column; /* stack elements vertically */
+        }
+        .content {
+            background: url('assets/bluebg.jpg') center/cover;
+            padding: 50px;
+            flex-grow: 1; /* allows content to expand and fill available space */
+            display: flex;
+            flex-direction: row; /* default: side-by-side layout */
+            gap: 25px; /* margin between media scroller & text area */
+            overflow: hidden;
+        }
+
+        /* === footer styling === */
+        footer {
+            background-color: black;
+            padding: 20px;
+            height: auto; /* ensure it grows to fit content */
+            display: flex;
+            flex-direction: column; /* stack everything vertically */
+            flex-shrink: 0; /* prevents footer from getting squished */
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin: 10px 0;
+        }
+
+        .social-icons a {
+            font-size: 32px; /* icon size */
+            color: white; /* default color */
+            transition: transform 0.3s ease, color 0.3s ease;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            color: #FFADA8; /* change color on hover */
+        }
+
+        /* === media scroller styling === */
+        .media-scroller {
+            display: flex;
+            flex-direction: column; /* default: vertical layout */
+            overflow-y: auto; /* enables scrolling */
+            min-width: 256px;
+            max-width: 30vw; /* adjust width on desktop */
+            padding: 10px; /* margin inside scroller */
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+            max-height: 100%;
+        }
+
+        .media-item {
+            background: rgba(255, 255, 255, 0.1);
+            background-size: cover; /* Image covers the div */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat;
+            border-radius: 10px;
+            padding: 15px; /* margin inside each media item */
+            margin-bottom: 10px; /* space between media items */
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .media-item:hover {
+            background-color: rgba(255, 255, 255, 0.2); /* Lighten the background on hover */
+            transition: all 0.2s ease; /* Smooth transition */
+        }
+
+
+        /* === text area styling === */
+        .text-area {
+            flex-grow: 1; /* fills remaining space */
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            padding: 20px; /* adjust text area padding */
+            display: flex;
+            justify-content: center;
+            overflow-y: auto;
+            /* align-items: center;
+            text-align: center; */
+        }
+
+        /* Style Markdown-rendered content */
+        .text-area h1, .text-area h2, .text-area h3 {
+            margin-top: 0;
+        }
+
+        .text-area p {
+            line-height: 1.6;
+        }
+
+        .text-area a {
+            color: #1e90ff; /* Link color */
+            text-decoration: none;
+        }
+
+        .text-area a:hover {
+            text-decoration: underline;
+        }
+
+        /* === mobile view (Switch to Horizontal Scroller) === */
+        @media (max-width: 768px) {
+            .content {
+                flex-direction: column; /* Stack elements vertically */
+                height: auto;
+                width: 90vw;
+            }
+
+            .media-scroller {
+                flex-direction: row; /* switch to horizontal scrolling */
+                overflow-x: auto;
+                overflow-y: hidden;
+                max-width: 100%;
+                max-height: 30vw; /* limit height on mobile */
+                padding: 10px; /* adjust padding */
+                white-space: nowrap;
+            }
+
+            .media-item {
+                display: inline-block;
+                min-width: 100px; /* minimum width for horizontal items */
+                margin-right: 10px; /* Aadjust spacing between items */
+            }
+        }
+
+    </style>
+    <script src="include/grained.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <div id="splash" class="splash">
+        <div class="parallax-bg rellax" data-rellax-speed="-4"></div>
+        <div class="foreground">
+            <img src="assets/logo.png" style="min-width: 15rem; max-width: 20vw; margin-bottom: 50px" alt="isidore.">
+            <a href="https://www.youtube.com/@isidoredot"><img src="assets/cd.png" style="min-width: 20rem; max-width: 30vw; margin-bottom: 50px" alt="" class="rellax" data-rellax-speed="1"></a>
+            <h3>vocalsynth music producer ✝</h3>
+        </div>
+    </div>
+    <div class="post-splash">
+        <div id="content" class="content">
+            <!-- Media Scroller (Left on Desktop, Top on Mobile) -->
+            <div class="media-scroller">
+                <div class="media-item"
+                    data-md="who.md"><b>who is isidore.</b></div>
+                <div class="media-item"
+                    data-md="faq.md"><b>FAQ</b></div>
+                <div class="media-item"
+                    style="background-image: url('assets/anotheroneundone.jpg'); padding-top: 100%"
+                    aria-label="another one undone"
+                    data-md="anotheroneundone.md"></div>
+                <div class="media-item"
+                    style="background-image: url('assets/machine.jpg'); padding-top: 100%"
+                    aria-label="MACHINE"
+                    data-md="machine.md"></div>
+                <div class="media-item"
+                    style="background-image: url('assets/freezeover.jpg'); padding-top: 100%"
+                    aria-label="time won't freeze over for you"
+                    data-md="freezeover.md"></div>
+                <div class="media-item"
+                    style="background-image: url('assets/simpleparadise.jpg'); padding-top: 100%"
+                    aria-label="Simple Paradise"
+                    data-md="simpleparadise.md"></div>
+                <div class="media-item">NAKAMI</div>
+                <div class="media-item">elevenfold</div>
+                <div class="media-item">i want to</div>
+                <div class="media-item">perfectly happy</div>
+            </div>
+
+            <!-- Text Area (Right on Desktop, Bottom on Mobile) -->
+            <div class="text-area">
+                <p>markdown goes here</p>
+            </div>
+        </div>
+        <footer id="footer">
+            <p>socials: </p>
+            <div class="social-icons">
+                <a href="https://www.youtube.com/@isidoredot" target="_blank" class="fa-brands fa-youtube"></a>
+                <a href="https://isidoredot.bandcamp.com/" target="_blank" class="fa-brands fa-bandcamp"></a>
+                <a href="https://open.spotify.com/artist/4W7k66phKIniw5eUGILAnu" target="_blank" class="fa-brands fa-spotify"></a>
+                <a href="https://soundcloud.com/isidoredot" target="_blank" class="fa-brands fa-soundcloud"></a>
+                <a href="https://x.com/Bedrock573" target="_blank" class="fa-brands fa-x-twitter"></a>
+            </div>
+            <p>email: 14dollmusic at gmail dot com</p>
+            <p>© isidore. <span id="year"></span>. all rights reserved.</p>
+        </footer>
+    </div>
+</body>
+<script>
+    var rellax = new Rellax('.rellax');
+
+    var splash_grained_options = {
+        animate: true,
+        patternWidth: 100,
+        patternHeight: 100,
+        grainOpacity: 0.17,
+        grainDensity: 1,
+        grainWidth: 1,
+        grainHeight: 1
+    };
+    grained('#splash',splash_grained_options)
+
+    /*
+    var content_grained_options = {
+        animate: true,
+        patternWidth: 100,
+        patternHeight: 100,
+        grainOpacity: 0.15,
+        grainDensity: 1,
+        grainWidth: 1,
+        grainHeight: 1
+    };
+    grained('#content',content_grained_options)
+    */
+
+    document.querySelector("#year").textContent = new Date().getFullYear();
+
+    // Function to fetch and render Markdown
+    async function loadMarkdown(mdFile) {
+        try {
+            // Fetch the Markdown file
+            const response = await fetch(`md/${mdFile}`);
+            if (!response.ok) {
+                throw new Error(`Failed to load ${mdFile}`);
+            }
+            const markdown = await response.text();
+
+            // Render Markdown to HTML
+            const html = marked.parse(markdown);
+
+            // Populate the .text-area with the rendered HTML
+            document.querySelector('.text-area').innerHTML = html;
+        } catch (error) {
+            console.error('Error loading Markdown:', error);
+            document.querySelector('.text-area').innerHTML = `<p>Error loading content.</p>`;
+        }
+    }
+
+    // Add click event listeners to all .media-item elements
+    document.querySelectorAll('.media-item').forEach(item => {
+        item.addEventListener('click', () => {
+            const mdFile = item.getAttribute('data-md');
+            if (mdFile) {
+                loadMarkdown(mdFile);
+            }
+        });
+    });
+</script>
+</html>

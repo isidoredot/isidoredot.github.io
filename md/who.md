@@ -1,0 +1,13 @@
+# isidore.
+
+i am a music producer who listens to a lot of stuff, but i generally like
+japanese pop and art pop. i've been making music since ~2015, though i've only
+been serious about it since 2021 or so.
+
+i like using digital instruments because i can't play instruments that well,
+and i like using VOCALOIDs because i'm not confident in my own singing, but
+i also enjoy collaborating with real vocalists and musicians.
+
+currently, i'm interested in making my own vocalsynths and music
+hardware/software. i'm an engineer so i design, build, and program technology a
+lot.
