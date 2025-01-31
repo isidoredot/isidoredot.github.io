@@ -198,6 +198,21 @@
             text-decoration: underline;
         }
 
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 aspect ratio (9 / 16 = 0.5625) */
+            overflow: hidden;
+        }
+
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
         /* === mobile view (Switch to Horizontal Scroller) === */
         @media (max-width: 768px) {
             .content {
@@ -272,7 +287,7 @@
 
             <!-- Text Area (Right on Desktop, Bottom on Mobile) -->
             <div class="text-area">
-                <p>markdown goes here</p>
+                <p>bottom text</p>
             </div>
         </div>
         <footer id="footer">
@@ -338,6 +353,9 @@
             document.querySelector('.text-area').innerHTML = `<p>uh oh, error loading content. sorry about that</p>`;
         }
     }
+
+    // load "who is isidore." page initially
+    loadMarkdown("who.md");
 
     // Add click event listeners to all .media-item elements
     document.querySelectorAll('.media-item').forEach(item => {

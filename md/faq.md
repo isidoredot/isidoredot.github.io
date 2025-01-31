@@ -32,18 +32,18 @@ i love to give feedback! show me what you're working on!
 yes! my DMs are open. i may not be super responsive all the time but i read my
 DMs
 
+*do you do commissions?*
+
+i can help with whatever you need in the songwriting, production, or
+mixing/mastering process, and maybe even with visuals, programming, engineering
+or directing. contact me if you're interested in commissions, though as i'm busy
+i can't guarantee i will have time or motivation.
+i like working on cool things. convince me that your project is cool!
+
 *what music do you like?*
 
-check out my [https://rateyourmusic.com/~BedrockSolid](rateyourmusic) page.
+check out my [rateyourmusic](https://rateyourmusic.com/~BedrockSolid) page.
 i'm very conscious of what i like and what i don't like to hear in music, and i
 use that to my advantage because it becomes easier to get inspiration and to
 identify issues in my own music. but yeah that's why i have a whole rating
 system...
-
-*do you do commissions?*
-
-i could help with whatever you need in the songwriting or production process,
-and maybe even with visuals, programming, engineering or directing. contact me
-if you're interested in commissions, though as i'm busy i can't guarantee i will
-have time or motivation. if i think your project is cool i'll be more likely
-to help. or maybe if u have money
