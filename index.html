@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <title>isidore.</title>
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         * {
             margin: 0;
             padding: 0;
@@ -57,19 +60,47 @@
             max-width: 80%;
             height: auto;
         }
-        .post-splash {
+
+        .scroll-down {
+            position: absolute;
+            bottom: 20px; /* Adjust to position above the bottom */
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .scroll-down:hover {
+            background: rgba(255, 255, 255, 0.4);
+            transform: translateX(-50%) scale(1.1);
+        }
+
+        /* === post-splash styling === */
+        #info {
             height: 100vh; /* full viewport height */
+            background: url('assets/bluebg.jpg') center/cover;
             display: flex;
             flex-direction: column; /* stack elements vertically */
         }
-        .content {
-            background: url('assets/bluebg.jpg') center/cover;
+        #content {
+            max-width: 1200px;
+            width: 100%;
             padding: 50px;
             flex-grow: 1; /* allows content to expand and fill available space */
             display: flex;
             flex-direction: row; /* default: side-by-side layout */
             gap: 25px; /* margin between media scroller & text area */
             overflow: hidden;
+            margin: auto;
         }
 
         /* === footer styling === */
@@ -135,18 +166,21 @@
 
         /* === text area styling === */
         .text-area {
-            flex-grow: 1; /* fills remaining space */
             background: rgba(0, 0, 0, 0.6);
             border-radius: 15px;
             padding: 20px; /* adjust text area padding */
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            flex-grow: 1; /* fills remaining space */
+            /* justify-content: center; */
             overflow-y: auto;
+            text-align: left;
             /* align-items: center;
             text-align: center; */
+            gap: 1rem;
         }
 
-        /* Style Markdown-rendered content */
+        /* for markdown-rendered content */
         .text-area h1, .text-area h2, .text-area h3 {
             margin-top: 0;
         }
@@ -201,10 +235,13 @@
             <img src="assets/logo.png" style="min-width: 15rem; max-width: 20vw; margin-bottom: 50px" alt="isidore.">
             <a href="https://www.youtube.com/@isidoredot"><img src="assets/cd.png" style="min-width: 20rem; max-width: 30vw; margin-bottom: 50px" alt="" class="rellax" data-rellax-speed="1"></a>
             <h3>vocalsynth music producer ✝</h3>
+            <a href="#info" class="scroll-down">
+                <i class="fa-solid fa-chevron-down"></i> <!-- Font Awesome icon -->
+            </a>
         </div>
     </div>
-    <div class="post-splash">
-        <div id="content" class="content">
+    <div id="info">
+        <div id="content">
             <!-- Media Scroller (Left on Desktop, Top on Mobile) -->
             <div class="media-scroller">
                 <div class="media-item"
@@ -287,7 +324,7 @@
             // Fetch the Markdown file
             const response = await fetch(`md/${mdFile}`);
             if (!response.ok) {
-                throw new Error(`Failed to load ${mdFile}`);
+                throw new Error(`failed to load ${mdFile}`);
             }
             const markdown = await response.text();
 
@@ -297,8 +334,8 @@
             // Populate the .text-area with the rendered HTML
             document.querySelector('.text-area').innerHTML = html;
         } catch (error) {
-            console.error('Error loading Markdown:', error);
-            document.querySelector('.text-area').innerHTML = `<p>Error loading content.</p>`;
+            console.error('error loading markdown:', error);
+            document.querySelector('.text-area').innerHTML = `<p>uh oh, error loading content. sorry about that</p>`;
         }
     }
 
