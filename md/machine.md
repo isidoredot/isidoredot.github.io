@@ -11,7 +11,8 @@ needed to make and perform a song at a scheduled concert as the class final
 project, so the pressure was on to make something good.
 
 **354_firekicks.vcv (2022/09/23)**
-<audio controls src="vcv_20220923_111129_345.mp3">
+
+<audio controls src="audio/vcv_20220923_111129_345.mp3">
 error: your browser couldn't load the audio
 </audio>
 
@@ -20,6 +21,7 @@ i hadn't come up with the intro yet, just the cowbell refrain thing and
 eventually a verse melody and the rap section drum loop
 
 **354vcv_origdemo.mp3 (2022/09/23)**
+
 <audio controls src="audio/354vcv_origdemo.mp3">
 error: your browser couldn't load the audio
 </audio>
@@ -29,6 +31,7 @@ of patches on my yamaha SY77. i love my SY77 because it's so unique
 (mixing FM and samples together) and there's not really a VST recreation for it.
 
 **354vcv_20221023.mp3**
+
 <audio controls src="audio/354vcv_20221023.mp3">
 error: your browser couldn't load the audio
 </audio>
@@ -40,6 +43,7 @@ by Kitazawa Kyouhei, which covers the trap influence, but there's also a bunch
 of industrial sounds, synthpop, hip hop drums, and FM synths mixed in.
 
 **354vcv_fixlag_20221113.mp3**
+
 <audio controls src="audio/354vcv_20221113.mp3">
 error: your browser couldn't load the audio
 </audio>
@@ -55,11 +59,13 @@ i tried to figure out the tuning for the rap section but it took me a bit to get
 it down.
 
 **354vcv_miku_20221120bruh.mp3**
+
 <audio controls src="audio/354vcv_20221120bruh.mp3">
 error: your browser couldn't load the audio
 </audio>
 
 **354vcv_miku_20221120bruh_2.mp3**
+
 <audio controls src="audio/354vcv_20221120bruh_2.mp3">
 error: your browser couldn't load the audio
 </audio>
@@ -68,11 +74,13 @@ also, i started looking back at previous projects and found some that i could
 incorporate into this song. so shoutout to me in 2018 and 2021!
 
 **deepstuffexample2.wav (2018/11/10)**
+
 <audio controls src="audio/deepstuffexample2.mp3">
 error: your browser couldn't load the audio
 </audio>
 
 **insanity4.mp3 (2021/05/27)**
+
 <audio controls src="audio/insanity4.mp3">
 error: your browser couldn't load the audio
 </audio>
@@ -85,6 +93,7 @@ from LAMP EYE - 証言, a song that defined the Japanese Hip Hop genre. shoutout
 to _____ who recommended the song in an online language exchange program.
 
 **354vcv_fixlag_20221122.wav**
+
 <audio controls src="audio/354vcv_fixlag_20221122.mp3">
 error: your browser couldn't load the audio
 </audio>
@@ -92,6 +101,7 @@ error: your browser couldn't load the audio
 notice that the wav contains notes i put for myself in the project
 
 **354vcv_miku_20221123.mp3**
+
 <audio controls src="audio/354vcv_miku_20221123.mp3">
 error: your browser couldn't load the audio
 </audio>
@@ -109,6 +119,7 @@ i asked my friend casey for some advice, fairly close to the concert,
 so the instrumental project was called "354vcv_fixlag_postcasey"
 
 **354vcv_miku_20221202.mp3**
+
 <audio controls src="audio/354vcv_miku_20221202.mp3">
 error: your browser couldn't load the audio
 </audio>
@@ -123,6 +134,7 @@ export the stems for future me to deal with.
 skip to almost 2 years later, i finally suck it up and decide it's time
 
 **354vcv_remix_20241023.mp3**
+
 <audio controls src="audio/354vcv_remix_20241023.mp3">
 error: your browser couldn't load the audio
 </audio>
@@ -133,6 +145,7 @@ replace them. i changed up the lyrics to fit my song but used the same flow as
 ____ did in 証言. i tried recording myself doing it...
 
 **354vcv_remix_2_20241026.mp3**
+
 <audio controls src="audio/354vcv_remix_2_20241026.mp3">
 error: your browser couldn't load the audio
 </audio>
@@ -140,6 +153,7 @@ error: your browser couldn't load the audio
 didn't turn out that great. so my next try was to use miku
 
 **354vcv_remix_2_20241029.mp3**
+
 <audio controls src="audio/354vcv_remix_2_20241029.mp3">
 error: your browser couldn't load the audio
 </audio>
@@ -150,6 +164,7 @@ that allowed me to find a compromise. i ended up layering miku and synthv moca
 together:
 
 **354vcv_remix_2_20241118.mp3**
+
 <audio controls src="audio/354vcv_remix_2_20241118.mp3">
 error: your browser couldn't load the audio
 </audio>

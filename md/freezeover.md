@@ -15,6 +15,7 @@ have.
 anyway here's a draft.
 
 **softwave_20240703.mp3**
+
 <audio controls src="audio/softwave_20240703.mp3">
 error: your browser couldn't load the audio
 </audio>
@@ -23,6 +24,7 @@ final version existed 2 days later but i almost sped the song up by 2 BPM. i
 was convinced not to do that. but this is what it sounded like
 
 **softwave_master_102.mp3**
+
 <audio controls src="audio/softwave_master_102.mp3">
 error: your browser couldn't load the audio
 </audio>
