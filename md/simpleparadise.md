@@ -16,6 +16,7 @@ taking 2 years for every other song...and this was what, 3 weeks?
 i was working on this during christmas and winter break, as the dates show.
 
 **evil yorushika_20231224.mp3**
+
 <audio controls src="audio/evil yorushika_20231224.mp3">
 error: your browser couldn't load the audio
 </audio>
@@ -24,6 +25,7 @@ you can watch me try and figure out the melody and progression in real time.
 apparently i had a reasonable idea of the arrangement already
 
 **evil yorushika_20231225.mp3**
+
 <audio controls src="audio/evil yorushika_20231225.mp3">
 error: your browser couldn't load the audio
 </audio>
@@ -31,6 +33,7 @@ error: your browser couldn't load the audio
 also notice how the lyrics and the tuning change as well.
 
 **evil yorushika_20231226.mp3**
+
 <audio controls src="audio/evil yorushika_20231226.mp3">
 error: your browser couldn't load the audio
 </audio>
@@ -38,6 +41,7 @@ error: your browser couldn't load the audio
 "flimsy paradise" isn't as good of a title, is it
 
 **evil yorushika_20240101.mp3**
+
 <audio controls src="audio/evil yorushika_20240101.mp3">
 error: your browser couldn't load the audio
 </audio>
@@ -54,6 +58,7 @@ authentic.
 i started working on fixing synthv ayame's tuning as well.
 
 **evil yorushika_20240102_1.mp3**
+
 <audio controls src="audio/evil yorushika_20240102_1.mp3">
 error: your browser couldn't load the audio
 </audio>
@@ -65,16 +70,19 @@ rhythm guitars fundamentally wouldn't be as loud as other rock songs, so ouch.
 but here's some of the drafts
 
 **evil yorushika mixing_20240106.mp3**
+
 <audio controls src="audio/evil yorushika mixing_20240106.mp3">
 error: your browser couldn't load the audio
 </audio>
 
 **evil yorushika mixing_20240109_2.mp3**
+
 <audio controls src="audio/evil yorushika mixing_20240109_2.mp3">
 error: your browser couldn't load the audio
 </audio>
 
 **evil yorushika mixing_mastered_20240109.mp3**
+
 <audio controls src="audio/evil yorushika mixing_mastered_20240109.mp3">
 error: your browser couldn't load the audio
 </audio>
