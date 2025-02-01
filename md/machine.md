@@ -44,7 +44,7 @@ of industrial sounds, synthpop, hip hop drums, and FM synths mixed in.
 
 **354vcv_fixlag_20221113.mp3**
 
-<audio controls src="audio/354vcv_20221113.mp3">
+<audio controls src="audio/354vcv_fixlag_20221113.mp3">
 error: your browser couldn't load the audio
 </audio>
 
@@ -90,7 +90,9 @@ for the final version. i guess i didn't think to put
 deepstuffexample2 in until a bit later. you may also notice at the drop there
 is a sample! it's uncleared so i replaced it with miku vocals later, but it's
 from LAMP EYE - 証言, a song that defined the Japanese Hip Hop genre. shoutout
-to _____ who recommended the song in an online language exchange program.
+to my man who recommended the song in an online language exchange program.
+i have your name saved somewhere but i'll have to dig for it, probably in my
+screenshots
 
 **354vcv_fixlag_20221122.wav**
 

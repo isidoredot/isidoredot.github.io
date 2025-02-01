@@ -94,6 +94,6 @@ good enough for streaming, probably. as of writing this it hasn't popped up
 on spotify yet.
 
 i asked @nataliee.s on instagram to do the art for me, which was different
-from the idea i originally had (thinking of ____ on twitter) but i appreciated
+from the idea i originally had (thinking of @hold_party_ on twitter) but i appreciated
 her vision and i like the art a lot. had to shove the painting in a flatbed
 scanner multiple times and photoshop the scans together to digitize it.
