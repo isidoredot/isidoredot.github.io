@@ -41,8 +41,6 @@
             position: relative;
             height: 100vh;
             overflow: hidden;
-            background: #12018B;
-            z-index: -2;
         }
         .parallax-bg {
             position: absolute;
@@ -168,6 +166,12 @@
             transition: all 0.2s ease; /* Smooth transition */
         }
 
+        .media-item.disabled {
+            opacity: 0.5; /* Reduce opacity to gray out */
+            pointer-events: none; /* Disable click events */
+            cursor: not-allowed; /* Change cursor to indicate it's not clickable */
+        }
+
 
         /* === text area styling === */
         .text-area {
@@ -284,10 +288,10 @@
                     style="background-image: url('assets/simpleparadise.jpg'); padding-top: 100%"
                     aria-label="Simple Paradise"
                     data-md="simpleparadise.md"></div>
-                <div class="media-item">NAKAMI</div>
-                <div class="media-item">elevenfold</div>
-                <div class="media-item">i want to</div>
-                <div class="media-item">perfectly happy</div>
+                <div class="media-item disabled">NAKAMI</div>
+                <div class="media-item disabled">elevenfold</div>
+                <div class="media-item disabled">i want to</div>
+                <div class="media-item disabled">perfectly happy</div>
             </div>
 
             <!-- Text Area (Right on Desktop, Bottom on Mobile) -->

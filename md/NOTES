@@ -1,0 +1,4 @@
+regex to get audio player from bolded filename
+
+\*\*(.+)\*\*\n
+**$1**\n<audio controls src="audio/$1">\n

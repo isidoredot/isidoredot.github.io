@@ -11,3 +11,6 @@ i also enjoy collaborating with real vocalists and musicians.
 currently, i'm interested in making my own vocalsynths and music
 hardware/software. i'm an engineer so i design, build, and program technology a
 lot.
+
+using the menu, you can check out my songs and get some behind-the-scenes
+info, including early drafts. i hope you find it interesting!
