@@ -4,6 +4,10 @@
 <iframe width="100%" height="360" src="https://www.youtube.com/embed/PRelPmY9szY?si=iZaN1Wv4rDcZgtfG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+Simple Paradise is about being confronted with having to do the right thing at
+the risk of being rejected by others. and asking God to give spiritual guidance
+and strength.
+
 ### project name: evil_yorushika
 
 it's inspired by yorushika's thoughtcrime, and my brain went to those evil ____
@@ -86,3 +90,7 @@ error: your browser couldn't load the audio
 <audio controls src="audio/evil yorushika mixing_mastered_20240109.mp3">
 error: your browser couldn't load the audio
 </audio>
+
+the music video is a hand-traced drawing of Seville Cathedral in Spain, which
+references the inspiration for my name, *isidore.* which is St. Isidore of
+Seville, the unofficial patron saint of the Internet.

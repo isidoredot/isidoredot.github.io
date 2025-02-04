@@ -4,6 +4,10 @@
 <iframe width="100%" src="https://www.youtube.com/embed/9NJ-IPyb-TI?si=WpvwFKhcV7lc0poV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
+MACHINE is about living a repetitive, meaningless job, where nothing changes
+and the days blend together. getting stuck in that cycle and not being able to
+imagine a way out anymore.
+
 ### project name: 354vcv
 
 it started as a VCV rack patch for my electronic composition class. we
