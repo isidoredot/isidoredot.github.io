@@ -1,7 +1,8 @@
 # isidore.
 
-i am a music producer who listens to a lot of stuff, but i generally like
-japanese pop and art pop. i've been making music since ~2015, though i've only
+i am a music producer who loves songwriting, and i don't confine myself to
+genres, but i particularly like japanese pop and art pop.
+i've been making music since ~2015, though i've only
 been serious about it since 2021 or so.
 
 i like using digital instruments because i can't play instruments that well,
