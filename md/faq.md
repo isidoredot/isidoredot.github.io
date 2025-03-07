@@ -21,7 +21,8 @@ control over.
 *do you want to collab?*
 
 please message me if you want to collab because i really wanna work with other musicians more!
-at the very least let's share ideas.
+at the very least let's share ideas. one caveat for collaboration is that i do not work with
+pirated VSTs or content, i no longer find it morally acceptable.
 
 *can you give me feedback on a song?*
 
