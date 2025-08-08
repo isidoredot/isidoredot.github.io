@@ -50,13 +50,15 @@ system...
 <details>
     <summary><i>dream collabs?</i></summary>
 
-    non-exhaustive list... (this is kind of a favorite artists list in a way)
+    non-exhaustive list...
 
-    kikuo, giga, sheena ringo, any member of CLC, MONACA, maaya sakamoto, yuyoyuppe, taishi, bjork, ryo from supercell,
-    yuki kajiura, ichiko aoba, JOBA, romil hemnani, hoshimachi suisei, ado, stargaze shelter, co shu nie, steven page,
-    joey valence and brae, FINNEAS, kero kero bonito, atarashii gakko, yehan jehan
+    vocalists: any member of CLC, hoshimachi suisei, ranko from BUTAOTOME, MonochroMenace, suzie, casey lee williams,
+    mayumi morinaga, hanatan, ado, vally.exe, maaya sakamoto
 
-    miyolophone, penoreri, powerless/muryokuP, cnri, omuraisu/bkk, mayumi morinaga, ippo.tsk, kurokotei, STM, creuzer, ReeK,
-    estra (estra_artse), MonochroMenace, suzie
+    composers, producers, arrangers, performers: kikuo, giga, sheena ringo, miyolophone, MONACA, yuyoyuppe, taishi,
+    bjork, ryo from supercell, yuki kajiura, ichiko aoba, JOBA, romil hemnani, stargaze shelter, co shu nie,
+    steven page, joey valence and brae, danny brown, FINNEAS, kero kero bonito, atarashii gakko, yehan jehan, におP,
+    buzzG, any member of BUTAOTOME (comp, ranko, paprika, ranko no ane), yousei teikoku, flavor foley, penoreri,
+    powerless/muryokuP, cnri, omuraisu/bkk, ippo.tsk, kurokotei, creuzer, estra (estra_artse), hiimsvla
 
 </details>
