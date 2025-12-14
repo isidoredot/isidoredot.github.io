@@ -10,9 +10,6 @@ i will write more info in here later it's 2am i'm tired
 
 ### project name: project_42_2
 
-this was originally a collab with DJ D where he had written the bridge and i needed to write a chorus, i made a few choruses but he wasn't satisfied
-so i took one of the ideas and made it my own song
-
 here's the instrumental mastered and unmastered (respectively):
 
 <audio controls src="audio/IITAI_instrumental.flac">
@@ -22,3 +19,6 @@ error: your browser couldn't load the audio
 <audio controls src="audio/IITAI_instrumental_unmastered.flac">
 error: your browser couldn't load the audio
 </audio>
+
+this was originally a collab with DJ D where he had written the bridge and i needed to write a chorus, i made a few choruses but he wasn't satisfied
+so i took one of the ideas and made it my own song. it was originally called Project_42.wav and then i sent three melody drafts, project_42_2, project_42_3, project_42_4.
