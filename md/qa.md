@@ -53,7 +53,7 @@ system...
     non-exhaustive list...
 
     vocalists: any member of CLC, hoshimachi suisei, ranko from BUTAOTOME, MonochroMenace, suzie, casey lee williams,
-    mayumi morinaga, hanatan, ado, vally.exe, maaya sakamoto
+    mayumi morinaga, hanatan, ado, vally.exe, maaya sakamoto, rio fukai
 
     composers, producers, arrangers, performers: kikuo, giga, sheena ringo, miyolophone, MONACA, yuyoyuppe, taishi,
     bjork, ryo from supercell, yuki kajiura, ichiko aoba, JOBA, romil hemnani, stargaze shelter, co shu nie,
