@@ -20,7 +20,7 @@ error: your browser couldn't load the audio
 error: your browser couldn't load the audio
 </audio>
 
-[click on me to download the untuned SVP]("files/IITAI_untuned.svp")
+[click on me to download the untuned SVP](files/IITAI_untuned.svp) (thanks marin!)
 
 this was originally a collab with DJ D where he had written the bridge and i needed to write a chorus, i made a few choruses but he wasn't satisfied
 so i took one of the ideas and made it my own song. it was originally called Project_42.wav and then i sent three melody drafts, project_42_2, project_42_3, project_42_4.
