@@ -4,9 +4,9 @@
 <iframe width="100%" src="https://www.youtube.com/embed/Zfh45Egx_cI?si=H3TM9St4no56OUf5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 </div>
 
-another one undone is about being unsatisfied with yourself and feeling like
-you aren't improving as a person. hopefully the negative consequences of sin
-will drive me to be better.
+another one undone is about being unsatisfied with myself, feeling like
+i'm not improving as a person, and feeling guilty when i betray my conscience.
+hopefully the negative consequences of sin will drive me to be better.
 
 ### project name: julieflutternot
 

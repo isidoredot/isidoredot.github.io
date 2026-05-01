@@ -5,12 +5,11 @@
 ### project name: softwave
 
 i wanted to make a "softwave" song, specifically like longlost's
-"i wouldn't mind dying with you" which my friend/peer had choreographed and i
+"i wouldn't mind dying with you" which a peer of mine had choreographed and i
 thought it was awesome. that's basically it.
 
 for some reason i thought of "everything will freeze" and then
-"Necrofantasia all hell freezes over" which was an old black MIDI that i still
-have.
+"Necrofantasia all hell freezes over" which is an old black MIDI.
 
 anyway here's a draft.
 

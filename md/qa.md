@@ -7,45 +7,42 @@ make them sound real. i can play drums and keys though, as well as my own
 instruments...somewhat. but i prefer the piano roll and a mouse unless i'm
 collaborating with other musicians in a studio live
 
-*did you make all of this yourself?*
+*who made the website?*
 
-unless i otherwise specify, i do everything myself; music, videos, programming,
-even this website. i do use royalty free assets and creative commons art/code,
-which i give credit to when necessary. i don't feel the need to do it all
-myself (in fact i want to work with others more) but it ends up that way because
-it's harder to start a collab than to work on things i have complete creative
-control over.
+me! i liked ippo.tsk and moe shop's websites so i took some inspiration (and
+perhaps some css) from them.
 
 *do you want to collab?*
 
 please message me if you want to collab because i really wanna work with other musicians more!
 at the very least let's share ideas. one caveat for collaboration is that i do not work with
-pirated VSTs or content, i no longer find it morally acceptable.
+pirated VSTs or content, i no longer find it morally acceptable. i also probably will reject
+working on sexually explicit/suggestive content.
 
 *can you give me feedback on a song?*
 
-i love to give feedback! show me what you're working on!
+i love to give feedback! (bring the beat back!) show me what you're working on!
 
 *can i ask you a question? or just talk?*
 
 yes! my DMs are open. i may not be super responsive all the time but i read my
 DMs
 
-*do you do commissions?*
+*do you take commissions?*
 
 i can help with whatever you need in the songwriting, production, or
 mixing/mastering process, and maybe even with visuals, programming, engineering
 or directing. contact me if you're interested in commissions, though as i'm busy
 i can't guarantee i will have time or motivation.
-i like working on cool things. convince me that your project is cool!
+i like working with passionate people on cool things. convince me that your
+project is cool!
 
 *what music do you like?*
 
 check out my [rateyourmusic](https://rateyourmusic.com/~BedrockSolid) page.
-i'm very conscious of what i like and what i don't like to hear in music, and i
+i'm conscious of what i like and what i don't like to hear in music, and i
 use that to my advantage because it becomes easier to get inspiration and to
-identify issues in my own music. but yeah that's why i have a whole rating
-system...
+identify issues in my own music.
 
 <details>
     <summary><i>dream collabs?</i></summary>
@@ -53,7 +50,7 @@ system...
     non-exhaustive list...
 
     vocalists: any member of CLC, hoshimachi suisei, ranko from BUTAOTOME, MonochroMenace, suzie, casey lee williams,
-    mayumi morinaga, hanatan, ado, vally.exe, maaya sakamoto, rio fukai
+    mayumi morinaga, hanatan, ado, vally.exe, maaya sakamoto, rio fukai, itoki hana, himeringo
 
     composers, producers, arrangers, performers: kikuo, giga, sheena ringo, miyolophone, MONACA, yuyoyuppe, taishi,
     bjork, ryo from supercell, yuki kajiura, ichiko aoba, JOBA, romil hemnani, stargaze shelter, co shu nie,

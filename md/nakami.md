@@ -29,6 +29,10 @@ surprised if i was thinking about the vivid bad squad project sekai in-game them
 
 **bossanova.mp3**
 
+<audio controls src="audio/bossanova.mp3">
+error: your browser couldn't load the audio
+</audio>
+
 in 2024 i tried recreating delusionalism by MASS OF THE FERMENTING DREGS as a starting point because i really loved the
 raw energy in it.
 
@@ -36,6 +40,10 @@ i looked for past projects and ideas that i could integrate to make a new song o
 bossanova project!
 
 **bossanova_delusionalismlike.mp3**
+
+<audio controls src="audio/bossanova_delusionalismlike_og.mp3">
+error: your browser couldn't load the audio
+</audio>
 
 seems like i came up with the chorus, then the verse, then the pre-chorus, then the bridge. for the verse i was
 definitely thinking of Izonshou -I Am An Addict- by Sheena Ringo which is just Bbmaj7 and F7 repeating
