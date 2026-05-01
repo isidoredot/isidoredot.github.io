@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <!-- website for isidore. -->
-<!-- LAST UPDATED: 2025-01-31 -->
+<!-- LAST UPDATED: 2026-05-01 -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,6 +16,7 @@
     <style>
         html {
             scroll-behavior: smooth;
+            scroll-snap-type: y proximity;
         }
         * {
             margin: 0;
@@ -40,6 +41,7 @@
             position: relative;
             height: 100vh;
             overflow: hidden;
+            scroll-snap-align: start;
         }
         .parallax-bg {
             position: absolute;
@@ -88,20 +90,22 @@
 
         /* === post-splash styling === */
         #info {
-            height: 100vh; /* full viewport height */
             background: url('assets/bluebg.jpg') center/cover;
             display: flex;
             flex-direction: column; /* stack elements vertically */
+            position: relative;
+            /* height: 100vh; */
+            height: auto;
+            scroll-snap-align: start;
         }
         #content {
-            max-width: 1200px;
+            /* #max-width: 1200px; */
             width: 100%;
-            padding: 50px;
             flex-grow: 1; /* allows content to expand and fill available space */
             display: flex;
             flex-direction: row; /* default: side-by-side layout */
             gap: 25px; /* margin between media scroller & text area */
-            overflow: hidden;
+            overflow-x: hidden;
             margin: auto;
         }
 
@@ -130,84 +134,221 @@
         }
 
         .social-icons a:hover {
-            color: #FFADA8; /* change color on hover */
+            color: #c2a8ff; /* change color on hover */
         }
 
-        /* === media scroller styling === */
-        .media-scroller {
+        /* === channel styling === */
+
+        .channel-pages {
             display: flex;
-            flex-direction: column; /* default: vertical layout */
-            overflow-y: auto; /* enables scrolling */
-            min-width: 256px;
-            max-width: 30vw; /* adjust width on desktop */
-            padding: 10px; /* margin inside scroller */
+            width: 100%;
+            height: auto;
+            gap: 5%;
+            
+            padding: 0 10%;
+            /* transition: transform 0.45s ease; */
+            transition: transform 0.5s cubic-bezier(.25,.8,.25,1);
+            
+        }
+        
+        .channel-grid {
+            flex: 0 0 100%; /* each page = full viewport width */
+            display: grid;
+
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+            gap: 1rem;
+            /* height: 50vh; */
+
+            /* KEY: constrain + center */
+            margin: 6rem auto 6rem;   /* centers horizontally */
+        }
+
+        .channel-item {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1 / 1; /* replaces padding-top hack */
+            height: auto;        /* important */
+            min-width: 0;
+            border: 0.4rem solid rgba(0, 0, 0, 0.6);
             background: rgba(0, 0, 0, 0.6);
-            border-radius: 15px;
-            scrollbar-width: thin;
-            scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
-            max-height: 100%;
-        }
-
-        .media-item {
-            background: rgba(255, 255, 255, 0.1);
-            background-size: cover; /* Image covers the div */
-            background-position: center; /* Centers the image */
-            background-repeat: no-repeat;
-            border-radius: 10px;
-            padding: 15px; /* margin inside each media item */
-            margin-bottom: 10px; /* space between media items */
-            text-align: center;
             cursor: pointer;
-            align-content: center;
+            border-radius: 1rem;
         }
 
-        .media-item-img {
-            padding-top: 100%;
-        }
+        /* .channel-item:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            transition: all 0.2s ease;
+        } */
 
-        .media-item:hover {
-            background-color: rgba(255, 255, 255, 0.2); /* Lighten the background on hover */
-            transition: all 0.2s ease; /* Smooth transition */
-        }
-
-        .media-item.disabled {
+        .channel-item.disabled {
             opacity: 0.5; /* Reduce opacity to gray out */
-            pointer-events: none; /* Disable click events */
+            /* pointer-events: none; */
             cursor: not-allowed; /* Change cursor to indicate it's not clickable */
         }
 
-
-        /* === text area styling === */
-        .text-area {
-            background: rgba(0, 0, 0, 0.6);
-            border-radius: 15px;
-            padding: 20px; /* adjust text area padding */
-            display: flex;
-            flex-direction: column;
-            flex-grow: 1; /* fills remaining space */
-            /* justify-content: center; */
-            overflow-y: auto;
-            text-align: left;
-            /* align-items: center;
-            text-align: center; */
+        .channel-item.dual {
+            display: grid;
+            grid-template-rows: 1fr 1fr; /* two equal vertical halves */
             gap: 1rem;
+
+            border: none;
+            background: none;
+            padding: 0; 
         }
 
-        /* for markdown-rendered content */
-        .text-area h1, .text-area h2, .text-area h3 {
+        .sub-item {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            border-radius: 1.0rem;
+            background: rgba(0, 0, 0, 0.6);
+            overflow: hidden;
+            cursor: pointer;
+            text-align: center;
+            align-content: center;
+        }
+
+        .sub-item:hover {
+            border: 0.4rem solid rgba(255, 255, 255, 0.2);
+            background-color: rgba(127, 127, 127, 0.4);
+            transition: all 0.2s ease;
+        }
+
+        .hoverable {
+            opacity: 0;
+            transition: 0.2s;
+        }
+
+        .channel-item:hover .hoverable {
+            opacity: 1;
+        }
+
+        .disabled-hover {
+            pointer-events: none;
+        }
+
+        .channel-item-title {
+            position: absolute;
+            bottom: 0rem;
+            left: 0rem;
+            background: black;
+            color: white;
+            padding: 5px 1.0rem;
+            font-size: 1.2rem;
+            line-height: 1.1em;
+            width: 100%;
+            /* max-width: 75%; */
+            z-index: 2;
+            /* border-radius: 0.3rem; */
+            text-align: center;
+        }
+
+        .channel-item > img {
+            position: absolute;
+            inset: 0px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0.6rem;
+            opacity: 1;
+            transition: opacity 0.3s;
+        }
+
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 48px;
+            background: rgba(0, 0, 0, 0.6);
+            color: white;
+            border: none;
+            padding: 20px;
+            cursor: pointer;
+            z-index: 10;
+        }
+
+        .arrow.left {
+            left: 20px;
+        }
+
+        .arrow.right {
+            right: 20px;
+        }
+
+        /* === text area styling === */
+
+        .modal {
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.2);
+
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.4s ease, visibility 0.4s ease;
+        }
+
+        .modal.show {
+            opacity: 1;
+            visibility: visible;        /* fade in and enable clicks */
+        }
+
+        .modal-content {
+            background-color: rgba(5, 0, 30, 0.9);
+            margin: 15% auto; /* 15% from the top and centered */
+            padding: 50px;
+            border: 0.2rem solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            width: 80%; /* Could be more or less, depending on screen size */
+            max-width: 64rem;
+            text-align: left;
+
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            transform: translateY(10px);
+            transition: transform 0.4s ease;
+        }
+
+        .modal.show .modal-content {
+            transform: translateY(0);
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .modal-content h1, .modal-content h2, .modal-content h3 {
             margin-top: 0;
         }
 
-        .text-area p {
+        .modal-content p {
             line-height: 1.6;
         }
 
-        .text-area a {
+        .modal-content a {
             color: #1e90ff; /* Link color */
             text-decoration: none;
         }
 
-        .text-area a:hover {
+        .modal-content a:hover {
             text-decoration: underline;
         }
 
@@ -233,31 +374,61 @@
 
         /* === mobile view (Switch to Horizontal Scroller) === */
         @media (max-width: 768px) {
+            html {
+                scroll-snap-type: none;
+            }
+
+            .splash,
+            .foreground {
+                height: auto;
+                min-height: 100vh;
+            }
+
             #content {
                 flex-direction: column; /* Stack elements vertically */
-                padding: 20px;
+                padding: 0;
                 gap: 10px;
             }
 
-            .media-scroller {
-                flex-direction: row; /* switch to horizontal scrolling */
-                overflow-x: auto;
-                overflow-y: hidden;
-                max-width: 100%;
-                max-height: 30vw; /* limit height on mobile */
-                padding: 10px; /* adjust padding */ 
-                min-height: 125px;
+            .channel-pages {
+                display: grid;
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+                gap: 1rem;
+                width: 100%;
+                padding: 1.25rem;
+                transform: none !important;
             }
 
-            .media-item {
-                display: inline-block;
-                min-width: 100px; /* minimum width for horizontal items */
-                max-height: 100%;
-                margin-right: 10px; /* Aadjust spacing between items */
+            .channel-grid {
+                display: contents;
             }
 
-            .media-item-img {
-                padding-top: 0%;
+            .channel-item.dual {
+                grid-column: 1 / -1;
+            }
+
+            .channel-item .hoverable {
+                opacity: 0;
+            }
+
+            .channel-item-title {
+                opacity: 1;
+                z-index: 1;
+            }
+
+            .channel-item-title {
+                font-size: 1rem;
+                padding: 0.5rem 0.75rem;
+            }
+
+            .arrow {
+                display: none;
+            }
+
+            .modal-content {
+                width: calc(100% - 2rem);
+                margin: 2rem auto;
+                padding: 1.5rem;
             }
         }
 
@@ -287,47 +458,88 @@
         </div>
     </div>
     <div id="info">
+        <button class="arrow left">⟨</button>
         <div id="content">
-            <!-- Media Scroller (Left on Desktop, Top on Mobile) -->
-            <div class="media-scroller">
-                <div class="media-item"
-                    data-md="who.md"><b>who is isidore.</b></div>
-                <div class="media-item"
-                    data-md="qa.md"><b>Q&A</b></div>
-                <div class="media-item media-item-img"
-                    style="background-image: url('assets/iitai.jpg');"
-                    aria-label="IITAI"
-                    data-md="iitai.md"></div>
-                <div class="media-item media-item-img"
-                    style="background-image: url('assets/nakami.jpg');"
-                    aria-label="NAKAMI"
-                    data-md="nakami.md"></div>
-                <div class="media-item media-item-img"
-                    style="background-image: url('assets/anotheroneundone.jpg');"
-                    aria-label="another one undone"
-                    data-md="anotheroneundone.md"></div>
-                <div class="media-item media-item-img"
-                    style="background-image: url('assets/machine.jpg');"
-                    aria-label="MACHINE"
-                    data-md="machine.md"></div>
-                <div class="media-item media-item-img"
-                    style="background-image: url('assets/freezeover.jpg');"
-                    aria-label="time won't freeze over for you"
-                    data-md="freezeover.md"></div>
-                <div class="media-item media-item-img"
-                    style="background-image: url('assets/simpleparadise.jpg');"
-                    aria-label="Simple Paradise"
-                    data-md="simpleparadise.md"></div>
-                <div class="media-item disabled">elevenfold</div>
-                <div class="media-item disabled">i want to</div>
-                <div class="media-item disabled">perfectly happy</div>
+            <div id="details" class="modal">
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p>bottom text</p>
+                </div>
             </div>
-
-            <!-- Text Area (Right on Desktop, Bottom on Mobile) -->
-            <div class="text-area">
-                <p>bottom text</p>
+            <div class="channel-pages">
+                <div class="channel-grid">
+                    <div class="channel-item dual page1">
+                        <div class="sub-item" data-md="who.md"><h3>who is isidore.</h3></div>
+                        <div class="sub-item" data-md="qa.md"><h3>Q&A</h3></div>
+                    </div>
+                    <div class="channel-item page1"
+                        data-md="morewithu.md">
+                        <div class="hoverable channel-item-title">more with u</div>
+                        <img src="assets/morewithu.jpg">
+                    </div>
+                    <div class="channel-item page1"
+                        data-md="feedback.md">
+                        <div class="hoverable channel-item-title">FEEDBACK</div>
+                        <img src="assets/feedback.jpg">
+                    </div>
+                    <div class="channel-item page1"
+                        data-md="starlight.md">
+                        <div class="hoverable channel-item-title">Starlight</div>
+                        <img src="assets/starlight.jpg">
+                    </div>
+                    <div class="channel-item page1"
+                        data-md="dokonimonai.md">
+                        <div class="hoverable channel-item-title">dokonimonai</div>
+                        <img src="assets/dokonimonai.jpg">
+                    </div>
+                    <div class="channel-item page1"
+                        data-md="iitai.md">
+                        <div class="hoverable channel-item-title">IITAI</div>
+                        <img src="assets/iitai.jpg">
+                    </div>
+                    <div class="channel-item page1"
+                        data-md="nakami.md">
+                        <div class="hoverable channel-item-title">NAKAMI</div>
+                        <img src="assets/nakami.jpg">
+                    </div>
+                    <div class="channel-item page1"
+                        data-md="anotheroneundone.md">
+                        <div class="hoverable channel-item-title">another one undone</div>
+                        <img src="assets/anotheroneundone.jpg">
+                    </div>
+                </div>
+                <div class="channel-grid">
+                    <div class="channel-item page2"
+                        data-md="machine.md">
+                        <div class="hoverable channel-item-title">MACHINE</div>
+                        <img src="assets/machine.jpg">
+                    </div>
+                    <div class="channel-item page2"
+                        data-md="freezeover.md">
+                        <div class="hoverable channel-item-title">time won't freeze over for you</div>
+                        <img src="assets/freezeover.jpg">
+                    </div>
+                    <div class="channel-item page2"
+                        data-md="simpleparadise.md">
+                        <div class="hoverable channel-item-title">Simple Paradise</div>
+                        <img src="assets/simpleparadise.jpg">
+                    </div>
+                    <div class="channel-item disabled page2"
+                        data-md="perfectlyhappy.md">
+                        <div class="hoverable channel-item-title">perfectly happy</div>
+                    </div>
+                    <div class="channel-item disabled page2"
+                        data-md="elevenfold.md">
+                        <div class="hoverable channel-item-title">Elevenfold</div>
+                    </div>
+                    <div class="channel-item disabled page2"
+                        data-md="blushingcherry.md">
+                        <div class="hoverable channel-item-title">Blushing Cherry</div>
+                    </div>
+                </div>
             </div>
         </div>
+        <button class="arrow right">⟩</button>
         <footer id="footer">
             <b>socials: </b>
             <div class="social-icons">
@@ -354,7 +566,7 @@
         grainWidth: 1,
         grainHeight: 1
     };
-    grained('#splash',splash_grained_options)
+    grained('#splash',splash_grained_options);
 
     /*
     var content_grained_options = {
@@ -371,11 +583,88 @@
 
     document.querySelector("#year").textContent = new Date().getFullYear();
 
+    const pages = document.querySelector(".channel-pages");
+    const pageCount = document.querySelectorAll(".channel-grid").length;
+    const channelItems = document.querySelectorAll('.channel-item');
+
+    const left = document.querySelector(".arrow.left");
+    const right = document.querySelector(".arrow.right");
+    const mobileQuery = window.matchMedia("(max-width: 768px)");
+
+    let page = 0;
+
+    function isMobileLayout() {
+        return mobileQuery.matches;
+    }
+
+    function updatePage() {
+        if (isMobileLayout()) {
+            pages.style.transform = "none";
+            return;
+        }
+
+        pages.style.transform = `translateX(-${page * (100 - 10 - 5 - 1)}%)`
+    }
+
+    const updateHoverStates = () => {
+        if (isMobileLayout()) {
+            channelItems.forEach(item => item.classList.remove('disabled-hover'));
+            return;
+        }
+
+        const currentPage = page + 1; // if your page index is 0-based
+        channelItems.forEach(item => {
+            if (item.classList.contains(`page${currentPage}`)) {
+                item.classList.remove('disabled-hover');
+            } else {
+                item.classList.add('disabled-hover');
+            }
+        });
+    };
+
+    left.onclick = () => {
+        page = Math.max(0, page - 1);
+        updatePage();
+        updateHoverStates();
+    }
+
+    right.onclick = () => {
+        page = Math.min(pageCount - 1, page + 1);
+        updatePage();
+        updateHoverStates();
+    }
+
+    mobileQuery.addEventListener("change", () => {
+        if (isMobileLayout()) {
+            page = 0;
+        }
+
+        updatePage();
+        updateHoverStates();
+    });
+
+    var modal = document.getElementById("details");
+    var span = document.getElementsByClassName("close")[0];
+
+    function showModal() {
+        modal.classList.add("show");
+    }
+
+    function hideModal() {
+        modal.classList.remove("show");
+    }
+
+    span.onclick = hideModal;
+
+    window.onclick = function(event) {
+        if (event.target == modal) hideModal();
+    }
+
     // Function to fetch and render Markdown
     async function loadMarkdown(mdFile) {
         try {
             // Fetch the Markdown file
-            const response = await fetch(`md/${mdFile}`);
+            const response = await fetch(`https://isidore.is/md/${mdFile}`);
             if (!response.ok) {
                 throw new Error(`failed to load ${mdFile}`);
             }
@@ -384,25 +673,29 @@
             // Render Markdown to HTML
             const html = marked.parse(markdown);
 
-            // Populate the .text-area with the rendered HTML
-            document.querySelector('.text-area').innerHTML = html;
+            // Populate the .modal-content with the rendered HTML
+            document.querySelector('.modal-content').innerHTML = html;
         } catch (error) {
             console.error('error loading markdown:', error);
-            document.querySelector('.text-area').innerHTML = `<p>uh oh, error loading content. sorry about that</p>`;
+            document.querySelector('.modal-content').innerHTML = `<p>uh oh, error loading content. sorry about that</p>`;
         }
+
+        // modal.style.display = "block";
+        showModal();
     }
 
-    // load "who is isidore." page initially
-    loadMarkdown("who.md");
-
     // Add click event listeners to all .media-item elements
-    document.querySelectorAll('.media-item').forEach(item => {
+    document.querySelectorAll('.channel-item, .sub-item').forEach(item => {
         item.addEventListener('click', () => {
+            if (item.classList.contains('disabled') || item.classList.contains('disabled-hover')) return;
             const mdFile = item.getAttribute('data-md');
             if (mdFile) {
                 loadMarkdown(mdFile);
             }
         });
     });
+
+    updateHoverStates();
+
 </script>
 </html>
