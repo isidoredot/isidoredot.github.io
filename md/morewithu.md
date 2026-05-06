@@ -20,6 +20,6 @@ error: your browser couldn't load the audio
 error: your browser couldn't load the audio
 </audio>
 
-[click on me to download the untuned SVP](files/morewithu_untuned.svp) (thanks marin!)
+[click on me to download the untuned SVP](files/morewithu_untuned.svp)
 
 note that some harms are missing from the SVP because they are sung by my friend Jessica Taylor!
