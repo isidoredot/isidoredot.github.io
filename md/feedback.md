@@ -17,3 +17,5 @@ thinking this would be a cool song for miku expo. the beat itself had an infecti
 energy that i thought would be amazing live.
 
 menace came up with the theme and most of the melody/lyrics in like 3 days. crazy
+
+instrumental + VPR is on [menace's ko-fi page](https://ko-fi.com/s/708622188b)
