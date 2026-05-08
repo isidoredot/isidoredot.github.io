@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Three QR Codes</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: #000;
+      color: #fff;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+    }
+
+    .page {
+      width: min(1200px, 100%);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      align-items: start;
+    }
+
+    .card {
+      text-align: center;
+      padding: 28px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .profile-icon {
+      width: min(220px, 100%);
+      height: min(220px, 100vw);
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 18px;
+      border: 3px solid rgba(255, 255, 255, 0.18);
+      background: rgba(255,255,255,0.08);
+    }
+
+    h2 {
+      margin: 0 0 24px;
+      font-size: clamp(1.6rem, 3vw, 2.5rem);
+      letter-spacing: 0.03em;
+      font-weight: 700;
+    }
+
+    .qr {
+      width: min(260px, 100%);
+      aspect-ratio: 1;
+      background: #fff;
+      padding: 14px;
+      border-radius: 16px;
+      display: block;
+      margin: 0 auto 20px;
+    }
+
+    
+
+    @media (max-width: 850px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media print {
+      body {
+        background: #000 !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="grid">
+      <article class="card">
+        <img class="profile-icon" id="icon1" src="isidorelogo.jpg" alt="Profile icon 1" />
+        <h2 id="title1">isidore.</h2>
+        <canvas class="qr" id="qr1" aria-label="QR code 1"></canvas>
+        </article>
+
+      <article class="card">
+        <img class="profile-icon" id="icon2" src="menaceicon.jpg" alt="Profile icon 2" />
+        <h2 id="title2">MonochroMenace</h2>
+        <canvas class="qr" id="qr2" aria-label="QR code 2"></canvas>
+        </article>
+
+      <article class="card">
+        <img class="profile-icon" id="icon3" src="suzielogo.jpg" alt="Profile icon 3" />
+        <h2 id="title3">suzie</h2>
+        <canvas class="qr" id="qr3" aria-label="QR code 3"></canvas>
+        </article>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script>
+    const qrData = [
+      {
+        title: "isidore.",
+        url: "https://isidore.is",
+        icon: "isidorelogo.jpg"
+      },
+      {
+        title: "MonochroMenace",
+        url: "https://monochromenace.carrd.co/",
+        icon: "menaceicon.jpg"
+      },
+      {
+        title: "suzie",
+        url: "https://x.com/SUZlE_P",
+        icon: "suzielogo.jpg"
+      }
+    ];
+
+    qrData.forEach((item, index) => {
+      const number = index + 1;
+      const title = document.getElementById(`title${number}`);
+      const icon = document.getElementById(`icon${number}`);
+      const canvas = document.getElementById(`qr${number}`);
+
+      title.textContent = item.title;
+      icon.src = item.icon;
+
+      canvas.innerHTML = "";
+
+      new QRCode(canvas, {
+        text: item.url,
+        width: 260,
+        height: 260,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+      });
+    });
+  </script>
+</body>
+</html>
