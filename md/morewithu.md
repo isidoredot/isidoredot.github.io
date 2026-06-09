@@ -22,4 +22,28 @@ error: your browser couldn't load the audio
 
 [click on me to download the untuned SVP](files/morewithu_untuned.svp)
 
-note that some harms are missing from the SVP because they are sung by my friend Jessica Taylor!
+note that some harms are missing from the SVP because they are sung by my friend Jessica Taylor! if you need those harmonies message me
+
+<audio controls src="audio/plasticbird_uptest_20250203.mp3">
+error: your browser couldn't load the audio
+</audio>
+
+yes, it took me over a year to finish this.
+
+<audio controls src="audio/plasticbird_uptest_20250204.mp3">
+error: your browser couldn't load the audio
+</audio>
+
+<audio controls src="audio/plasticbird_uptest_20250205.mp3">
+error: your browser couldn't load the audio
+</audio>
+
+<audio controls src="audio/plasticbird_uptest_20250209_chorustest.mp3">
+error: your browser couldn't load the audio
+</audio>
+
+<audio controls src="audio/plasticbird_uptest_20250415.mp3">
+error: your browser couldn't load the audio
+</audio>
+
+by this point i had the song figured out, just needed the finishing touches
