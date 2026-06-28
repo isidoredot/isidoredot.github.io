@@ -662,9 +662,15 @@
 
     span.onclick = hideModal;
 
-    window.onclick = function(event) {
-        if (event.target == modal) hideModal();
-    }
+    // window.onclick = function(event) {
+    //     if (event.target == modal) hideModal();
+    // }
+
+    modal.addEventListener("pointerdown", (event) => {
+        if (event.target === modal) {
+            hideModal();
+        }
+    });
 
     // Function to fetch and render Markdown
     async function loadMarkdown(mdFile) {
